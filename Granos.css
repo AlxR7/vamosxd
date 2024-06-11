@@ -13,8 +13,18 @@ body{
     max-width: 1200px;
     font-family: 'Lato';
     color: #333;
+    
+}
+#back {
+    background-color: green;
+    padding: 8px;
+    border-radius: 5px;
 }
 
+#back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 .icon-cart{
     width: 40px;
     height: 40px;
