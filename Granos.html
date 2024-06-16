@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Esquina verde</title>
+    <title>Document</title>
     <link rel="stylesheet" href="Granos.css">
 </head>
 <body>
@@ -11,142 +11,134 @@
         <img src="img/wsp.png" alt="WhatsApp" width="50" height="50">
       </a>
     <button type="button" id="back"><a class="" href="index.html">Regresar</a></button>
-	<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño modal carrito de compras con html, css y javascript</title>
+	<header>
+        <h1>Granos</h1>
 
-    <!--FUENTE DE ICONOS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <div class="container">
-
-        <div class="banner">
-            <img src="img/banner.jpg" alt="">
-        </div>
-
-        <h1 class="title">Nuevos Productos</h1>
-
-        <div class="product-grid">
-            <div class="product-grid__item">
-                <div class="product-grid__imagen">
-                    <img src="img/frejoles.jpg" alt="">
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
                 </div>
-
-                <div class="product-grid__info">
-                    <p class="product-grid__name">Frejol</p>
-                    <p class="product-grid__price">S/. 6.00 / kg</p>
-
-                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito"  >Agregar al carrito</a>
-
-                </div>
-
             </div>
 
-            <div class="product-grid__item">
-                <div class="product-grid__imagen">
-                    <img src="img/QUINUA4.jpg" alt="">
-                </div>
-
-                <div class="product-grid__info">
-                    <p class="product-grid__name">Quinua</p>
-                    <p class="product-grid__price">S/. 5.00 / kg</p>
-                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito" >Agregar al carrito</a>
-                </div>
-
-            </div>
-
-            <div class="product-grid__item">
-                <div class="product-grid__imagen">
-                    <img src="img/Arroz.jpg" alt="">
-                </div>
-
-                <div class="product-grid__info">
-                    <p class="product-grid__name">Arroz</p>
-                    <p class="product-grid__price">S/. 3.00 / kg</p>
-                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
-                </div>
-
-            </div>
-
-            <div class="product-grid__item">
-                <div class="product-grid__imagen">
-                    <img src="img/lentejas .jpeg" alt="">
-                </div>
-
-                <div class="product-grid__info">
-                    <p class="product-grid__name">Lenteja</p>
-                    <p class="product-grid__price">S/. 2.50 / kg</p>
-                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!--MODAL CARRITO-->
-        <div class="modal" id="jsModalCarrito">
-            <div class="modal__container">
-                <button type="button" class="modal__close fa-solid fa-xmark jsModalClose "></button>
-
-                <div class="modal__info">
-                    <div class="modal__header">
-                        <h2><i class="fa-brands fa-opencart"></i>Carrito</h2>
-                    </div>
-
-                    <div class="modal__body">
-                        <div class="modal__list">
-                            <div class="modal__item">
-                                <div class="modal__thumb">
-                                    <img src="img/frejoles.jpg" alt="Frejol">
-                                </div>
-                                <div class="modal__text-product">
-                                    <p>Frejol</p>
-                                    <p><strong>S/. 6.00 / kg</strong></p>
-                                </div>
-                            </div>
-
-
-                            <div class="modal__item">
-                                <div class="modal__thumb">
-                                    <img src="img/QUINUA4.jpg" alt="Quinua">
-                                </div>
-                                <div class="modal__text-product">
-                                    <p>Quinua</p>
-                                    <p><strong>S/. 5.00 / kg</strong></p>
-                                </div>
-                            </div>
-
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
                         </div>
-                    </div>
-
-                    <div class="modal__footer">
-                        <div class="modal__list-price">
-                            <ul>
-                                <li>Subtotal: <strong>S/. 11.00</strong></li>
-                                <li>Descuento: <strong>S/. 0.00</strong></li>
-                            </ul>
-                            <h4 class="modal__total-cart"> Total: $14.00</h4>
-                        </div>
-
-                        <div class="modal__btns">
-                            <a href="#" class="btn-border">Ir al carrito</a>
-                            <a href="#" class="btn-primary">Comprar Ahora</a>
-                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
                     </div>
                 </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
-
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="img/arroz.jpeg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Arroz</h2>
+                <p class="price">$8</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="img/lentejas .jpeg" />
+            </figure>
+            <div class="info-product">
+                <h2>Lentejas</h2>
+                <p class="price">$20</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="img/frejoles.jpg">
+            </figure>
+            <div class="info-product">
+                <h2>Frejoles</h2>
+                <p class="price">$5</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="img/almendras1.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Almendras</h2>
+                <p class="price">$9</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="img/QUINUA4.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>quinua</h2>
+                <p class="price">$15</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
     </div>
 
     <script src="Granos.js"></script>
+</body>
+</html>
+
+
+<footer class="text-center py-4 bg-dark text-light">
+    <p>© 2024 La esquina verde. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

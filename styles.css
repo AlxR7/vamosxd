@@ -1,5 +1,7 @@
+
 nav {
     background-color: #059b3e;
+    
 }
 
 .whatsapp-icon {
@@ -21,48 +23,28 @@ nav {
     text-align: center;
 }
 
-.socialmedias .fa-facebook {
-    margin-right: 20%;
-    font-size: x-large;
-    transition: transform 0.4s ease;
-}
 
-.socialmedias .fa-linkedin {
-    margin-right: 20%;
-    font-size: x-large;
-    transition: transform 0.4s ease;
-}
-
-.socialmedias .fa-youtube {
-    margin-right: 20%;
-    font-size: x-large;
-    transition: transform 0.4s ease;
-}
-
-.socialmedias .fa-instagram {
-    margin-right: 20%;
-    font-size: x-large;
-    transition: transform 0.4s ease;
-}
-
-.socialmedias a {
-    margin-right: 20%;
-    font-size: x-large;
-    color: black;
-}
-
-.fa-facebook:hover {
-    transform: scale(1.5);
-}
-
-.fa-linkedin:hover {
-    transform: scale(1.5);
-}
-
-.fa-youtube:hover {
-    transform: scale(1.5);
-}
-
-.fa-instagram:hover {
-    transform: scale(1.5);
-}
+#contact {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */     
+    overflow: hidden; /* Para asegurar que no haya desbordamiento */
+  }
+  #contact img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cubrir completamente el contenedor */
+  }
+  /* Pseudo-elemento para superponer un fondo oscuro */
+  #contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 0, 0.5); /* Color oscuro con opacidad */
+  }

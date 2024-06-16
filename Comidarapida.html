@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño modal carrito de compras con html, css y javascript</title>
+    <title>Comida Rapida</title>
 
     <!--FUENTE DE ICONOS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -37,12 +37,12 @@
         <div class="product-grid">
             <div class="product-grid__item">
                 <div class="product-grid__imagen">
-                    <img src="img/naranja.jpg" alt="">
+                    <img src="img/sabrosa-hamburguesa-papas-fritas.jpg" alt="Hamnurguesa">
                 </div>
 
                 <div class="product-grid__info">
-                    <p class="product-grid__name">Naranja</p>
-                    <p class="product-grid__price">$9.00 / kg</p>
+                    <p class="product-grid__name">Hamnurguesa con papas fritas</p>
+                    <p class="product-grid__price">$20.00 </p>
 
                     <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito"  >Agregar al carrito</a>
 
@@ -52,12 +52,12 @@
 
             <div class="product-grid__item">
                 <div class="product-grid__imagen">
-                    <img src="img/manzana.jpg" alt="">
+                    <img src="img/hot-dog-ternera-parrilla-snack-ketchup-ia-generativa_188544-7829.avif" alt="">
                 </div>
 
                 <div class="product-grid__info">
-                    <p class="product-grid__name">Manzana</p>
-                    <p class="product-grid__price">$5.00 / kg</p>
+                    <p class="product-grid__name">Perro Caliente de Ternera ala Parrilla</p>
+                    <p class="product-grid__price">$10.00 </p>
                     <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito" >Agregar al carrito</a>
                 </div>
 
@@ -65,12 +65,12 @@
 
             <div class="product-grid__item">
                 <div class="product-grid__imagen">
-                    <img src="img/limon.jpg" alt="">
+                    <img src="img/pizza-created-with-generative-ai-png.webp" alt="">
                 </div>
 
                 <div class="product-grid__info">
-                    <p class="product-grid__name">Limón</p>
-                    <p class="product-grid__price">$3.00 / kg</p>
+                    <p class="product-grid__name">Pizza</p>
+                    <p class="product-grid__price">$15.00 </p>
                     <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                 </div>
 
@@ -78,12 +78,12 @@
 
             <div class="product-grid__item">
                 <div class="product-grid__imagen">
-                    <img src="img/platano.jpg" alt="">
+                    <img src="img/184-h.jpg" alt="">
                 </div>
 
                 <div class="product-grid__info">
-                    <p class="product-grid__name">Platano</p>
-                    <p class="product-grid__price">$5.50 / kg</p>
+                    <p class="product-grid__name">Shawarma</p>
+                    <p class="product-grid__price">$12.50 /p>
                     <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                 </div>
 
@@ -91,7 +91,7 @@
 
         </div>
 
-        <!--MODAL CARRITO-->
+        <!--la vaina del carrito de compras que estreeeeees-->
         <div class="modal" id="jsModalCarrito">
             <div class="modal__container">
                 <button type="button" class="modal__close fa-solid fa-xmark jsModalClose "></button>
@@ -105,22 +105,22 @@
                         <div class="modal__list">
                             <div class="modal__item">
                                 <div class="modal__thumb">
-                                    <img src="img/naranja.jpg" alt="Naranja">
+                                    <img src="img/sabrosa-hamburguesa-papas-fritas.jpg" alt="Naranja">
                                 </div>
                                 <div class="modal__text-product">
-                                    <p>Naranja</p>
-                                    <p><strong>$9.00 / kg</strong></p>
+                                    <p>Hamburguesa</p>
+                                    <p><strong>$20.00 </strong></p>
                                 </div>
                             </div>
 
 
                             <div class="modal__item">
                                 <div class="modal__thumb">
-                                    <img src="img/manzana.jpg" alt="Naranja">
+                                    <img src="img/184-h.jpg" alt="Naranja">
                                 </div>
                                 <div class="modal__text-product">
-                                    <p>Manzana</p>
-                                    <p><strong>$5.00 / kg</strong></p>
+                                    <p>Shawarma</p>
+                                    <p><strong>$12.50 / kg</strong></p>
                                 </div>
                             </div>
 
@@ -130,10 +130,10 @@
                     <div class="modal__footer">
                         <div class="modal__list-price">
                             <ul>
-                                <li>Subtotal: <strong>$14.00</strong></li>
+                                <li>Subtotal: <strong>$20.00</strong></li>
                                 <li>Descuento: <strong>$0.00</strong></li>
                             </ul>
-                            <h4 class="modal__total-cart"> Total: $14.00</h4>
+                            <h4 class="modal__total-cart"> Total: $20.00</h4>
                         </div>
 
                         <div class="modal__btns">
