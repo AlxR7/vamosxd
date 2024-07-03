@@ -65,6 +65,8 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   border: 2px solid #ddd; /* Borde sólido */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  width: 700px; /* Ancho fijo en píxeles */
+  height: 400px; /* Altura fija en píxeles */
 }
 
 /* Ajuste de tamaño y proporciones */
@@ -78,6 +80,7 @@ nav {
   transform: scale(1.05); /* Aumenta la imagen al 105% de su tamaño original */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la intensidad de la sombra */
 }
+
 
 
 
