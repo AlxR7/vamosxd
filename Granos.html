@@ -3,142 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La Esquina verde</title>
     <link rel="stylesheet" href="Granos.css">
 </head>
 <body>
-    <a href="https://wa.me/1234567890" class="whatsapp-icon" target="_blank">
-        <img src="img/wsp.png" alt="WhatsApp" width="50" height="50">
-      </a>
-    <button type="button" id="back"><a class="" href="index.html">Regresar</a></button>
-	<header>
-        <h1>Granos</h1>
-
-        <div class="container-icon">
-            <div class="container-cart-icon">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="icon-cart"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                    />
-                </svg>
-                <div class="count-products">
-                    <span id="contador-productos">0</span>
-                </div>
-            </div>
-
-            <div class="container-cart-products hidden-cart">
-                <div class="row-product hidden">
-                    <div class="cart-product">
-                        <div class="info-cart-product">
-                            <span class="cantidad-producto-carrito">1</span>
-                            <p class="titulo-producto-carrito">Zapatos Nike</p>
-                            <span class="precio-producto-carrito">$80</span>
-                        </div>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="icon-close"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="cart-total hidden">
-                    <h3>Total:</h3>
-                    <span class="total-pagar">$200</span>
-                </div>
-                <p class="cart-empty">El carrito está vacío</p>
-            </div>
-        </div>
+    <header>
+        <a class="navbar-brand text-light" href="index.html">LA ESQUINA VERDE </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Categorias</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container-items">
-        <div class="item">
-            <figure>
-                <img
-                    src="img/arroz.jpeg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Arroz</h2>
-                <p class="price">$8</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-icon" target="_blank">
+        <img src="icons8-whatsapp-48.png" alt="WhatsApp" width="50" height="50">
+      </a>
+    
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granos</title>
+
+    <!--FUENTE DE ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="Comidarapida.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="banner">
+            <img src="bannergranos2.png" alt="banner">
         </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="img/lentejas .jpeg" />
-            </figure>
-            <div class="info-product">
-                <h2>Lentejas</h2>
-                <p class="price">$20</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
+
+        <h1 class="title">Granos</h1>
+        
+
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="quaker.png" alt="quaker">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Avena Quaker Tradicional 100g</p>
+                    <p class="product-grid__price">S/1.90 </p>
+
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito"  >¡PIDE AQUI!</a>
+
+                </div>
+
             </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="img/frejoles.jpg">
-            </figure>
-            <div class="info-product">
-                <h2>Frejoles</h2>
-                <p class="price">$5</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="img/almendras1.jpg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Almendras</h2>
-                <p class="price">$9</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="img/QUINUA4.jpg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>quinua</h2>
-                <p class="price">$15</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
+            
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="popcorn.png" alt="popcorn">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Maíz Pop Corn Corazón Del Fundo 450 gr</p>
+                    <p class="product-grid__price">S/3.80 </p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">¡PIDE AQUI!</a>
+            
     </div>
+</div>
+            
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="alverja.png" alt="popcorn">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Alveja Partida Corazón del Fundo 450 gr</p>
+                    <p class="product-grid__price">S/3.80 </p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">¡PIDE AQUI!</a>
+            
+    </div>
+</div>
+
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="arrozz.png" alt="arroz">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Pack 02 Arroz Extra Corazón Del Fundo 750 gr</p>
+                    <p class="product-grid__price">S/7.80 </p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito" >¡PIDE AQUI!</a>
+                </div>
+
+            </div>
+
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="costeño.png" alt="alverja">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Arroz Costeño graneadito 750 gr</p>
+                    <p class="product-grid__price">S/5.90 </p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">¡PIDE AQUI!</a>
+                </div>
+
+            </div>
+            
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="lenteja.png" alt="popcorn">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Lenteja Bebe Corazón Del Fundo 450 gr</p>
+                    <p class="product-grid__price">S/3.80 </p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">¡PIDE AQUI!</a>
+            
+    </div>
+</div>
+
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="packmaiz.png" alt="popcorn">
+                </div>
+
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Pack 02 Maíz Pop Corn Corazón Del Fundo 400 Gr</p>
+                    <p class="product-grid__price">S/3.80 </p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">¡PIDE AQUI!</a>
+            
+    </div>
+</div>
+
+    <div class="container">
+
+            <div class="product-grid__item">
+            <div class="product-grid__imagen">
+                <img src="frijol.png" alt="frijol">
+            </div>
+
+    <div class="product-grid__info">
+        <p class="product-grid__name">Frijol Canario Corazón del Fundo 450 gr</p>
+        <p class="product-grid__price">S/6.40</p>
+        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">¡PIDE AQUI!</a>
+    </div>
+    
+    
 
     <script src="Granos.js"></script>
-</body>
-</html>
-
-
-<footer class="text-center py-4 bg-dark text-light">
-    <p>© 2024 La esquina verde. Todos los derechos reservados.</p>
-  </footer>
 </body>
 </html>

@@ -294,7 +294,47 @@ img{
     .product-grid{
         grid-template-columns: 1fr;
     }
+
 }
+body {
+    font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align:right;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+ }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+  
 
 footer {
     background-color: #333333;
@@ -317,3 +357,7 @@ footer {
     width: 50px;
     height: 50px;
   }
+
+  .whatsapp-icon:hover {
+    color: #1b9284; /* Color del ícono al pasar el mouse por encima */
+}
