@@ -238,7 +238,7 @@ img{
     align-items: center;
 }
 
-.modal__item + .modal__item{
+.modal_item + .modal_item{
     margin-top: 20px;
 }
 
@@ -328,3 +328,43 @@ footer {
     align-content: center;
     align-items: center;
 }
+
+body {
+    font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align:right;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+ }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
