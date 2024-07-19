@@ -328,3 +328,35 @@ footer {
     align-content: center;
     align-items: center;
 }
+header {
+    background-color: #28a309; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between; /* Distribución de los elementos */
+    align-items: center; /* Alineación vertical */
+}
+.logo {
+    font-size: 1.5rem; /* Tamaño del texto del logotipo */
+    font-weight: bold; /* Negrita para el logotipo */
+}
+
+.nav-links {
+    list-style-type: none; /* Elimina los puntos de lista */
+    display: flex;
+    gap: 20px; /* Espacio entre elementos de navegación */
+}
+
+.nav-links li {
+    margin-right: 10px; /* Margen entre elementos de la lista */
+}
+
+.nav-links a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Color al pasar el mouse sobre los enlaces */
+}

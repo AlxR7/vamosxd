@@ -28,14 +28,7 @@ nav {
 }
 
 /* Estilo para las imágenes del arroz las demas vainas xd */
-.img-fluid {
-  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
-  height: auto; /* Para mantener la proporción original de la imagen */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ddd;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
 
 /* Estilo segundo para las imágenes del arroz las demas vainas xd */
 .img-fluid-2 {
@@ -46,16 +39,10 @@ nav {
   border: 2px solid #ddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* Estilo específico para las imágenes dentro de la sección de galería */
-#gallery .img-fluid {
-  border-radius: 10px; /* Esquinas redondeadas */
-  transition: transform 0.3s ease; /* Animación suave para transformación */
-}
 
-/* Efecto de hover para agrandar la imagen */
-#gallery .img-fluid:hover {
-  transform: scale(1.1); 
-  box-shadow: 0 08px 16px rgba(0, 0, 0, 0.2);
+.img-fluid-2:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cambia la sombra al pasar el ratón */
 }
 
 /* Estilos para las imágenes dentro de la sección "Los Favoritos!!!" */
@@ -91,36 +78,6 @@ nav {
   transform: scale(1.05); /* Aumenta la imagen al 105% de su tamaño original */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la intensidad de la sombra */
 }
-
-
-
-
-
-/* esta vaina no se quien lo puso pero para algo debe servir :v*/
-#contact {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Ocupa toda la altura de la ventana */     
-    overflow: hidden; /* Para asegurar que no haya desbordamiento */
-  }
-  #contact img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Para cubrir completamente el contenedor */
-  }
-  /* Pseudo-elemento para superponer un fondo oscuro */
-  #contact::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(50, 50, 0, 0.5); /* Color oscuro con opacidad */
-  }
 
  .container
  body {
@@ -164,50 +121,6 @@ header nav ul li a {
   font-size: 18px;
 }
 
-header nav ul li a.current,
-header nav ul li a:hover {
-  color: #ffd700; /* Cambiar color al pasar el mouse o al estar activo */
-}
-
-#nosotros {
-  position: relative;
-  background-image: url('img/nosotros.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 40px 0;
-  text-align: center;
-  color: #000000; /* Ajusta el color del texto para que contraste con la imagen de fondo */
-}
-
-#nosotros::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Superposición semi-transparente */
-}
-
-#nosotros h2,
-#nosotros p {
-  position: relative; /* Asegura que el texto aparezca por encima de la superposición */
-  z-index: 1;
-}
-
-#nosotros h2 {
-  font-size: 32px;
-  color: rgb(219, 205, 0);
-  margin-bottom: 10px;
-}
-
-#nosotros p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: white;
-}
-
 .carousel-txt{
   align-content: center;
   height: 100%;
@@ -247,30 +160,95 @@ header nav ul li a:hover {
   font-size: 20px;
   margin: -20px 0 -80px 0;
 }
-.offer-container {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+
+.contenedor-imagenes {
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra l  os elementos verticalmente */
 }
-.offer {
-  width: 80px;
-  height: 80px;
-  background-color: #060000f0;
+
+.contenedor-promociones {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  border: solid white 4px;
-  margin: -50px 0 0 300px;
-  padding: 30px;
-  box-shadow: 4px 5px 11px 0px #000000b0;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  padding: 20px; /* Espacio interno alrededor del contenido */
 }
-.offer p {
-  font-size: 17px;
-  line-height: 100%;
-  margin-bottom: -20px;
-  font-family: system-ui;
-  font-weight: bold;
-  padding-left: 2px;
+
+.texto-promociones {
+  margin-bottom: 20px; /* Espacio inferior entre el texto y las imágenes */
+  font-size: 24px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #333; /* Color del texto */
+}
+
+.contenedor-imagenes {
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.imagen-promo {
+  width: 800px; /* Ancho de la imagen 1 */
+  height: 400px; /* Altura  */
+  margin-right: 20px; /* Espacio a la derecha de la primera imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease; /* Transición para el efecto al pasar el ratón */
+}
+
+.imagen-promo2 {
+  width: 800px; /* Ancho de la imagen 2 */
+  height: 400px; /* Altura  */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease; /* Transición para el efecto al pasar el ratón */
+}
+
+.imagen-promo:hover,
+.imagen-promo2:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Fuente para el cuerpo */
+  display: flex;
+  min-height: 100vh; /* Altura mínima igual al 100% del viewport */
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Fuente para el cuerpo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima igual al 100% del viewport */
+}
+
+.content {
+  flex: 1; /* Que el contenido ocupe todo el espacio disponible */
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Fuente para el cuerpo */
+  min-height: 100vh; /* Altura mínima igual al 100% del viewport */
+  position: relative; /* Importante para el posicionamiento del footer */
+}
+
+.content {
+  padding: 20px;
+}
+
+footer {
+  background-color: #343a40; /* Color de fondo del footer */
+  color: white; /* Color del texto */
+  text-align: center; /* Centra el texto */
+  padding: 20px 0; /* Espaciado interior superior e inferior */
+  position: absolute; /* Fijar el footer en la parte inferior */
+  bottom: 0; /* Pegado al borde inferior */
+  width: 100%; /* Ocupar todo el ancho */
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave en la parte superior */
+  left: 20px; /* Mover el footer 20px desde el borde izquierdo */
 }

@@ -11,7 +11,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img/bg.jpg);
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img/4e4293857c03d819e4ae51de1e86d66a.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -160,12 +160,7 @@ form > button:hover,
 }
 
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    padding: 10px 0; /* Espacio alrededor del contenido */
-}
+
 
 nav ul {
     list-style-type: none; /* Elimina los puntos de lista */
@@ -214,7 +209,7 @@ nav ul li a:hover {
 
 header {
   width: 100%;
-  background-color: rgba(7, 241, 104, 0.671);
+  background-color: #28a309; /* Color de fondo del encabezado */
   padding: 10px 0;
   position: fixed;
   top: 0; 
