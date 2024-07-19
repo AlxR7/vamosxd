@@ -1,51 +1,257 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Empresa - Nosotros</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="nosotros.css">
+
+    <title>Esquina Verde</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Esquina Verde</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="index.html">Categorias</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="nosotros.html" class="current">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">
+                <p>La Esquina Verde</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="nosotros">
-        <div class="container">
-            <h2>¿Quiénes somos?</h2>
-            <p>Somos Esquina Verde la empresa encargada de traerte los mejores productos de calidad y ah un precio perfecto 
-                que se acomode a tu bolsillo!!!
-            </p>
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h3 class="home__subtitle">
+                            Calidad excepcional
+                        </h3>
+    
+                        <h1 class="home__title">
+                            Es hora de un <br>
+                            buena compra
+    
+                        </h1>
+                        
+                        <p class="home__description">
+                            Cada productor selecto refleja nuestro compromiso con los caficultores peruanos, quienes llevan el mejor producto selecto a tu mesa.
+                        </p>
+    
+                        <a href="#" class="button">
+                            Comenzar <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+    
+                    <img src="img/tienda-de-dulces-de-reposteria-mostrar-dbc9r0.jpg" alt="home image" class="home__img">
+                </div>
+            </section>
 
-            <h2>Nuestra Misión</h2>
-            <p>Nuestra misión es proporcionar a nuestros clientes los mejores productos de calidad a
-                precios accesibles, garantizando siempre un servicio excepcional que supere sus expectativas. </p>
+                    <!--==================== PRODUCTS ====================-->
+            <section class="products">
+                <div class="products__bg section">
+                    <div class="products__container container grid">
+                        <div class="products__data">
+                            <a href="" class="products__button">
+                                Conocé mas <i class="ri-arrow-down-s-line"></i>
+                            </a>
 
-            <h2>Nuestra Visión</h2>
-            <p>Nuestra visión es convertirnos en líderes del mercado, reconocidos por nuestra dedicación a la excelencia 
-                en productos y servicios, contribuyendo positivamente al bienestar de nuestros clientes y comunidades.</p>
-        </div>
-    </section>
+                            <p class="products__description">
+                                Nos esforzamos por formar asociaciones profundas con nuestros distribuidores de todo el mundo para crear una perspectiva juntos y formar relaciones de trabajo saludables basadas en la confianza y el respeto.
+                            </p>
+                        </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 La Esquina Verde. Todos los derechos reservados.</p>
+                        <div class="products__content">
+                            <article class="products__card">
+                                <img src="img/hot-dog-ternera-parrilla-snack-ketchup-ia-generativa_188544-7829.avif" alt="products image" class="products__img">
+                                <h3 class="products__name">Hot dogs</h3>
+                                <span class="products__price">$5.90</span>
+                            </article>
+
+                            <article class="products__card">
+                                <img src="img/hampapas.jpeg" alt="products image" class="products__img">
+                                <h3 class="products__name">Hamburguesa</h3>
+                                <span class="products__price">$10.90</span>
+                            </article>
+
+                            <article class="products__card">
+                                <img src="img/Agua.jpg" alt="products image" class="products__img">
+                                <h3 class="products__name">Agua</h3>
+                                <span class="products__price">$4.90</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== Nosotros ====================-->
+        <section class="about" id="about">
+            <div class="about__bg section">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title">
+                            Nuestra historia
+                        </h2>
+
+                        <p class="about__description">  
+                            Elaboramos y cultivamos el mejor café del Perú, acompañando a las familias desde 2020, con trabajadores profesionales que cosechan, recolectan y seleccionan el café con un trabajo de calidad, brindando así un café exquisito para disfrutar en familia.
+                        </p>
+                    </div>
+
+                    <img src="img/images (4).jpg" alt="about image" class="about__img">
+                </div>
+            </div>
+        </section>
+        
+
+        <!--==================== PASOS ====================-->
+        <section class="steps" id="steps">
+            <div class="steps__bg section">
+                <h2 class="section__title">
+                    Proceso de selección y preparación de nuestros productos
+                </h2>
+        
+                <div class="steps__container container grid">
+                    <img src="img/images (6).jfif" alt="steps image" class="steps__bg-img">
+        
+                    <div class="steps__content">
+
+        
+                        <div class="steps__card">
+                            <div class="steps__circle">
+                                <div class="steps__subcircle">
+                                    01
+                                </div>
+        
+                                <img src="img/images (6).jfif" alt="steps image" class="steps__img">
+                            </div>
+        
+                            <p class="steps__description">
+                                Seleccionamos cuidadosamente los productos frescos y de calidad directamente de los proveedores locales.
+                            </p>
+                        </div>
+        
+                        <div class="steps__card steps__card-move">
+                            <div class="steps__circle">
+                                <div class="steps__subcircle">
+                                    02
+                                </div>
+        
+                                <img src="img/diferencias-entre-bodega-y-minimarket.jpg" alt="steps image" class="steps__img">
+                            </div>
+        
+                            <p class="steps__description">
+                                Preparamos y empacamos los productos con estándares de higiene para garantizar su frescura y calidad.
+                            </p>
+                        </div>
+        
+                        <div class="steps__card">
+                            <div class="steps__circle">
+                                <div class="steps__subcircle">
+                                    03
+                                </div>
+        
+                                <img src="img/ar0715_productos.cabecera.jpg" alt="steps image" class="steps__img">
+                            </div>
+        
+                            <p class="steps__description">
+                                Etiquetamos y organizamos los productos en nuestras estanterías para facilitar su acceso y compra.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial" id="testimonial">
+            <div class="testimonial__bg section">
+                <div class="testimonial__container container grid">
+                    <div class="testimonial__data">
+                        <h2 class="section__title">
+                            Las almendras de esquina verde son lo mejor del mundo!!
+                        </h2>
+
+                        <span class="testimonial__name">
+                            Jhon Doe
+                        </span>
+                    </div>
+
+                    <img src="img/almendras1.jpg" alt="testimonial image" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+        </main>
+
+
+        <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <img src="img/coffee-beans-bg.png" alt="footer image" class="footer__bg-img">
+
+            <div class="footer__container container grid">
+                <div class="footer__data grid">
+                    <div>
+                    
+
+                        <h3 class="footer__title">
+                            Suscríbete a nuestra tienda y obten increibles descuentos
+                        </h3>
+                        
+                        <h3 class="footer__title">
+                            contactanos en nuestras redes!!
+                        </h3>
+                       
+                    </div>
+
+                    <form action="" class="footer__form grid">
+                        <input type="email" placeholder="Ingrese su email" class="footer__input">
+
+                        <button class="button footer__button" type="submit">
+                            Registrate
+                        </button>
+
+                        <p class="footer__description">
+                            Nos preocupamos por tus datos. Lea nuestras
+                            <a href="#" class="footer__privacy">Politicas de privacidad</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="footer__content grid">
+                    <div class="footer__social">
+                        <a href="https://wa.link/0op6s0"" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/alexis.rg.ff/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fatvirtuales"" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+
+                        <a href="https://wa.link/0op6s0" target="_blank" class="footer__social-link">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+                    </div>
+
+                    <span class="footer__copy">
+                        &#169; Esquina verde. Todos los derechos reservados
+                    </span>
+                </div>
+            </div>
         </div>
     </footer>
-</body>
-</html>
-    
+
 </body>
 </html>
